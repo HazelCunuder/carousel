@@ -1,0 +1,34 @@
+@use "../components/buttons";
+
+#carousel {
+    width: 1280px;
+    
+    position: relative;
+    margin: 3vh auto;
+
+    .img {
+    display: none;
+    height: 850px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1% 2%;
+    font-size: 1.75em;
+}
+
+body {
+    background-image: url("../../img/pexels-tom-jackson-1238161-2891884.jpg");
+    background-position: center;
+    background-size: stretch;
+}
