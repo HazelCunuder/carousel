@@ -3,11 +3,12 @@ header {
     background: #C8B6FF;
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 20px;
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
         font-family: 'Lucida Sans', sans-serif;
         font-weight: bold;
+        align-self: center;
     }
 }
