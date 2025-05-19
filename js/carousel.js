@@ -3,23 +3,16 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+function switchSlides(n) {
   showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
-  let slides = document.querySelectorAll("#carousel .img");
+  const slides = document.querySelectorAll("#carousel .img");
+  const totalSlides = slides.length;
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  slideIndex = ((n - 1 + totalSlides) % totalSlides) + 1;
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
+  slides.forEach(slide => (slide.style.display = "none"));
   slides[slideIndex - 1].style.display = "block";
 }
