@@ -100,7 +100,7 @@ header h1 {
 }
 
 #carousel {
-  max-width: 1000px;
+  width: 1280px;
   position: relative;
   margin: auto;
 }
